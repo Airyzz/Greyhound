@@ -10,7 +10,7 @@
 #include "DBGameFiles.h"
 
 // We need the DirectX Mesh Class
-#include "..\..\DirectXMesh\DirectXMesh.h"
+#include "..\..\DirectXMesh\DirectXMesh\DirectXMesh.h"
 
 // We need the following WraithX classes
 #include "Strings.h"

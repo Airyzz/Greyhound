@@ -391,6 +391,8 @@ const std::vector<CoDGameProcess> CoDAssets::GameProcessInfo =
     { "t6zm.exe", SupportedGames::BlackOps2, SupportedGameFlags::ZM },
     { "t6mp.exe", SupportedGames::BlackOps2, SupportedGameFlags::MP },
     { "t6sp.exe", SupportedGames::BlackOps2, SupportedGameFlags::SP },
+    { "t6mpv43.exe", SupportedGames::BlackOps2, SupportedGameFlags::MPRedacted },
+    { "t6zmv41.exe", SupportedGames::BlackOps2, SupportedGameFlags::ZMRedacted },
     // Black Ops 3
     { "blackops3.exe", SupportedGames::BlackOps3, SupportedGameFlags::SP },
     // Black Ops 4

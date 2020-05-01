@@ -43,6 +43,11 @@ private:
     // A list of offsets for Black Ops 2 zombie mode
     static std::array<DBGameInfo, 1> ZombieModeOffsets;
 
+
+    static std::array<DBGameInfo, 1> MultiPlayerRedactedOffsets;
+
+    static std::array<DBGameInfo, 1> ZombieModeRedactedOffsets;
+
     // -- Game utilities
 
     // Reads an XMaterial from it's logical offset in memory

@@ -30,6 +30,18 @@ std::array<DBGameInfo, 1> GameBlackOps2::ZombieModeOffsets =
     { 0xD41240, 0xD40E80, 0x2BF8880, 0 }
 }};
 
+
+// Black Ops 2 ZM Redacted
+std::array<DBGameInfo, 1> GameBlackOps2::ZombieModeRedactedOffsets =
+{ {
+	{ 0xD41240, 0xD40E80, 0x2BF8880, 0 }
+} };
+
+// Black Ops 2 MP Redacted
+std::array<DBGameInfo, 1> GameBlackOps2::MultiPlayerRedactedOffsets =
+{ {
+	{ 0xD4B340, 0xD4AF80, 0x2C22F80, 0 }
+} };
 // -- Finished with databases
 
 bool GameBlackOps2::LoadOffsets()
@@ -47,7 +59,10 @@ bool GameBlackOps2::LoadOffsets()
     if (CoDAssets::GameInstance != nullptr)
     {
         // Check built-in offsets via game exe mode (SP/MP/ZM)
-        for (auto& GameOffsets : (CoDAssets::GameFlags == SupportedGameFlags::SP) ? SinglePlayerOffsets : (CoDAssets::GameFlags == SupportedGameFlags::MP) ? MultiPlayerOffsets : ZombieModeOffsets)
+        for (auto& GameOffsets : (CoDAssets::GameFlags == SupportedGameFlags::SP) ? SinglePlayerOffsets : 
+			(CoDAssets::GameFlags == SupportedGameFlags::MP) ? MultiPlayerOffsets : 
+			(CoDAssets::GameFlags == SupportedGameFlags::ZM) ? ZombieModeOffsets : 
+			(CoDAssets::GameFlags == SupportedGameFlags::MPRedacted) ? MultiPlayerRedactedOffsets : ZombieModeRedactedOffsets)
         {
             // Read required offsets (XANIM, XMODEL, XFX)
             CoDAssets::GameOffsetInfos.emplace_back(CoDAssets::GameInstance->Read<uint32_t>(GameOffsets.DBAssetPools + (4 * 4)));

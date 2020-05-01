@@ -44,7 +44,9 @@ enum class SupportedGameFlags
     Files,
     SP,
     MP,
-    ZM
+    ZM,
+	MPRedacted,
+	ZMRedacted
 };
 
 // A set of FindGame() results

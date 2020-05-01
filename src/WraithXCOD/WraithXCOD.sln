@@ -11,7 +11,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectXTex", "..\WraithX\Ex
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libFLAC_static", "..\WraithX\ExternalDeps\Flac1.3.2\src\libFLAC\libFLAC_static.vcxproj", "{4CEFBC84-C215-11DB-8314-0800200C9A66}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectXMesh", "..\DirectXMesh\DirectXMesh_Desktop_2017.vcxproj", "{6857F086-F6FE-4150-9ED7-7446F1C1C220}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectXMesh", "..\DirectXMesh\DirectXMesh\DirectXMesh_Desktop_2017.vcxproj", "{6857F086-F6FE-4150-9ED7-7446F1C1C220}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CascLib", "..\CascLib\CascLib_vs17.vcxproj", "{78424708-1F6E-4D4B-920C-FB6D26847055}"
 EndProject
